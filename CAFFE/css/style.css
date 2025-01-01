@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and(min-width: 768px) {
+@media (min-width: 768px) {
     /*見出し*/
     .page-title {
         font-size: 5rem;
@@ -38,7 +38,7 @@
 
     /*News*/
     .cover-news {
-        background-image: url("../img/cover-news-l.webp");
+        background-image: url("");
     }
     .news-contents {
         display: flex;
@@ -57,13 +57,31 @@
 
     /*Menu*/
     .cover-menu {
-        background-image: url("../img/cover-menu-l.webp");
+        background-image: url("../img/cover-news-l.webp");
     }
-    .grid {
+    .menu {
         gap: 3rem 2rem;
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /*Contact*/
+    .cover-contact {
+        background-image: url("../img/cover-contact-l.webp");
+    }
+    .location {
+        display: flex;
+        gap: 2rem;
+    }
+    .location-info {
+        width: 32%;
+    }
+    .location-info .info th {
+        padding-left: 2rem;
+    }
+    .location-map {
+        margin-left: 20%;
+    }
+    
     /*フッター*/
     .page-footer {
         background-image: url("../img/footer-l.webp");
@@ -132,6 +150,11 @@ img {
     background-color: #0090aa;
 }
 
+/*iframe*/
+.iframe {
+    width: 100%;
+}
+
 /*ヘッダー*/
 .page-header {
     padding-top: .5rem;
@@ -168,7 +191,7 @@ img {
 
 /*HOME*/
 .cover-home {
-    background-image: url(../img/cover-home-s.webp);
+    background-image: url("../img/cover-home-s.webp");
 }
 .about {
     max-width: 736px;
@@ -181,12 +204,12 @@ img {
 
 /*News*/
 .cover-news {
-    background-image: url(../img/cover-news-s.webp);
+    background-image: url("../img/cover-news-s.webp");
 }
 
 /*Menu*/
 .cover-menu {
-    background-image: url(../img/cover-menu-s.webp);
+    background-image: url("../img/cover-menu-s.webp");
 }
 .grid {
     display: grid;
@@ -199,6 +222,35 @@ img {
     object-fit: cover;
     border-radius: 1rem;
 }
+
+/*Contact*/
+.cover-contact {
+    background-image: url(../img/cover-contact-s.webp);
+}
+
+/*店舗情報*/
+.location {
+    margin-bottom: 3.5rem;
+}
+.location-info {
+    margin-bottom: 2rem;
+}
+.location-info .info {
+    padding: 0;
+}
+
+/*お問い合わせ*/
+.email {
+    max-width: 916px;
+    background-color: #faf7f0;
+    border-radius: 48px;
+    padding: 1.5rem 2.5rem 2.5rem;
+    margin: 0 auto 2rem;
+}
+.email p {
+    margin: 1rem 0 2rem;
+}
+
 
 /*記事部分*/
 .post {
